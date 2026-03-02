@@ -4,78 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Famously Stupid - America's Finest News Source</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>FAMOUSLY STUPID</h1>
-            <p class="tagline">America's Finest News Source</p>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="branding">
+                <h1 class="site-logo">FAMOUSLY STUPID</h1>
+                <p class="site-tagline">America's Finest News Source</p>
+            </div>
+            <nav class="main-nav">
+                <a href="#">Politics</a>
+                <a href="#">World</a>
+                <a href="#">Business</a>
+                <a href="#">Entertainment</a>
+                <a href="#">Videos</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#politics">Politics</a>
-            <a href="#world">World</a>
-            <a href="#entertainment">Entertainment</a>
-            <a href="#videos">Videos</a>
-        </nav>
     </header>
 
-    <main class="news-grid">
-        <!-- Featured Story -->
-        <article class="featured">
-            <a href="ballot-purification.html">
-                <img src="https://via.placeholder.com/800x450/8b0000/d4af37?text=Ballot+Purification" alt="Ballot Purification">
-                <h2>Nation Celebrates Historic 'Ballot Purification' Initiative</h2>
-                <p class="excerpt">Ministry of Information declares democracy "more efficient than ever" following groundbreaking vote sanitization program.</p>
-            </a>
-        </article>
+    <main class="content-wrapper">
+        <section class="hero-section">
+            <article class="hero-story">
+                <a href="ballot-purification.html" class="story-link">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=1200&h=600&fit=crop" alt="Ballot box">
+                    </div>
+                    <div class="story-content">
+                        <h2 class="story-title">Nation Celebrates Historic 'Ballot Purification' Initiative</h2>
+                        <p class="story-excerpt">Ministry of Information declares democracy "more efficient than ever" following groundbreaking vote sanitization program that ensures every ballot reflects correct choices.</p>
+                    </div>
+                </a>
+            </article>
+        </section>
 
-        <!-- Article Grid -->
-        <article class="story">
-            <a href="#">
-                <h3>Local Man Discovers News He Agrees With Actually Fake</h3>
-                <p class="excerpt">Area resident shocked to learn satisfying headline was "completely made up."</p>
-            </a>
-        </article>
+        <section class="articles-grid">
+            <article class="article-card">
+                <a href="#">
+                    <h3>Local Man Discovers News He Agrees With Actually Fake</h3>
+                    <p class="meta">Politics · 2 hours ago</p>
+                </a>
+            </article>
 
-        <article class="story">
-            <a href="#">
-                <h3>Congress Passes Bill Nobody Read, Again</h3>
-                <p class="excerpt">"We're getting really good at this," admits lawmaker.</p>
-            </a>
-        </article>
+            <article class="article-card">
+                <a href="#">
+                    <h3>Congress Passes 2,400-Page Bill Nobody Read, Again</h3>
+                    <p class="meta">Politics · 4 hours ago</p>
+                </a>
+            </article>
 
-        <article class="story">
-            <a href="#">
-                <h3>Nation's Fact-Checkers Demand Fact-Checkers</h3>
-                <p class="excerpt">Meta fact-checking initiative already under scrutiny.</p>
-            </a>
-        </article>
+            <article class="article-card">
+                <a href="#">
+                    <h3>Nation's Fact-Checkers Demand Fact-Checkers</h3>
+                    <p class="meta">Media · 6 hours ago</p>
+                </a>
+            </article>
 
-        <article class="story">
-            <a href="#">
-                <h3>Celebrity Issues Apology For Thing You Didn't Know Happened</h3>
-                <p class="excerpt">Public confused but accepts anyway.</p>
-            </a>
-        </article>
+            <article class="article-card featured">
+                <a href="#">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=600&h=400&fit=crop" alt="News">
+                    </div>
+                    <h3>Celebrity Issues Apology For Thing You Didn't Know Happened</h3>
+                    <p class="excerpt">Public confused but accepts anyway, moves on to next scandal.</p>
+                    <p class="meta">Entertainment · 8 hours ago</p>
+                </a>
+            </article>
 
-        <article class="story">
-            <a href="#">
-                <h3>Breaking: Thing That Always Happens, Happens Again</h3>
-                <p class="excerpt">Experts say trend likely to continue indefinitely.</p>
-            </a>
-        </article>
+            <article class="article-card">
+                <a href="#">
+                    <h3>Breaking: Thing That Always Happens, Happens Again</h3>
+                    <p class="meta">World · 10 hours ago</p>
+                </a>
+            </article>
 
-        <article class="story">
-            <a href="#">
-                <h3>Area Dad Still Waiting For Everyone To Appreciate His Puns</h3>
-                <p class="excerpt">Family continues strategy of "just ignoring him until it stops."</p>
-            </a>
-        </article>
+            <article class="article-card">
+                <a href="#">
+                    <h3>Area Dad Still Waiting For Everyone To Appreciate His Puns</h3>
+                    <p class="meta">Local · 12 hours ago</p>
+                </a>
+            </article>
+
+            <article class="article-card">
+                <a href="#">
+                    <h3>Report: 90% Of Online Arguments Could Have Been Avoided</h3>
+                    <p class="meta">Technology · 14 hours ago</p>
+                </a>
+            </article>
+
+            <article class="article-card featured">
+                <a href="#">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop" alt="Business">
+                    </div>
+                    <h3>Silicon Valley Startup Pivots From Original Idea To Whatever Makes Money</h3>
+                    <p class="excerpt">Investors praise "pragmatic approach to abandoning all principles."</p>
+                    <p class="meta">Business · 1 day ago</p>
+                </a>
+            </article>
+
+            <article class="article-card">
+                <a href="#">
+                    <h3>Nation Agrees To Disagree On Existence Of Objective Reality</h3>
+                    <p class="meta">Politics · 1 day ago</p>
+                </a>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Famously Stupid. All rights reserved. All facts optional.</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Famously Stupid. All rights reserved. All facts optional.</p>
+            <nav class="footer-nav">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
