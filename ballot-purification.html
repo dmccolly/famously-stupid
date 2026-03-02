@@ -3,85 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballot Purification | Famously Stupid</title>
+    <title>Nation Celebrates Historic 'Ballot Purification' Initiative | Famously Stupid</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .video-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #1a1a1a;
-            padding: 1rem;
-            border: 3px solid #333;
-        }
-        
-        video {
-            width: 100%;
-            display: block;
-            background: #000;
-        }
-        
-        .episode-info {
-            margin: 2rem auto;
+        .article-container {
             max-width: 800px;
-            text-align: left;
+            margin: 2rem auto;
             padding: 0 1rem;
         }
         
-        .episode-info h2 {
-            color: #d4af37;
+        .article-header {
+            border-bottom: 3px solid #8b0000;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .article-header h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
             margin-bottom: 1rem;
         }
         
-        .episode-info p {
-            line-height: 1.6;
-            margin-bottom: 1rem;
+        .article-meta {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .video-embed {
+            margin: 2rem 0;
+            background: #000;
+        }
+        
+        .video-embed video {
+            width: 100%;
+            display: block;
+        }
+        
+        .article-body {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .article-body p {
+            margin-bottom: 1.5rem;
         }
         
         .back-link {
             display: inline-block;
-            margin: 2rem auto;
-            padding: 0.8rem 1.5rem;
-            background: #8b0000;
-            color: #fff;
+            margin: 2rem 0;
+            color: #8b0000;
             text-decoration: none;
-            border: 2px solid #d4af37;
-            transition: all 0.3s;
+            font-weight: bold;
         }
         
         .back-link:hover {
-            background: #d4af37;
-            color: #000;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ballot Purification</h1>
-        <p class="subtitle">A Ministry of Information Production</p>
-        
-        <div class="video-container">
+    <header>
+        <div class="logo">
+            <h1>FAMOUSLY STUPID</h1>
+            <p class="tagline">America's Finest News Source</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#politics">Politics</a>
+            <a href="#world">World</a>
+            <a href="#videos">Videos</a>
+        </nav>
+    </header>
+
+    <article class="article-container">
+        <div class="article-header">
+            <h1>Nation Celebrates Historic 'Ballot Purification' Initiative</h1>
+            <p class="article-meta">By Ministry of Information | March 2, 2026 | Politics</p>
+        </div>
+
+        <div class="video-embed">
             <video controls>
                 <source src="videos/ballot-purification.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        
-        <div class="episode-info">
-            <h2>Episode Synopsis</h2>
-            <p>In this thrilling newsreel, witness the glorious spectacle of democracy in action! Our Ministry of Information proudly presents the revolutionary Ballot Purification Initiative—where every vote is carefully curated for maximum patriotic impact.</p>
-            
-            <p>Featuring:</p>
-            <ul>
-                <li>State-of-the-art ballot sanitization techniques</li>
-                <li>Expertly trained civic hygienists</li>
-                <li>100% Ministry-approved messaging</li>
-                <li>Mandatory enlightenment for all citizens</li>
-            </ul>
-            
-            <p><em>"Your vote matters—especially after we've counted it!"</em></p>
+
+        <div class="article-body">
+            <p>WASHINGTON—In a groundbreaking development hailed by officials as "the future of democracy," the federal government unveiled its revolutionary Ballot Purification Initiative this week, assuring citizens that every vote will now be "carefully curated for maximum patriotic impact."</p>
+
+            <p>The program, which features state-of-the-art ballot sanitization techniques and expertly trained civic hygienists, promises to streamline the democratic process by removing any votes that might be "confusing, contradictory, or counter-productive to national unity."</p>
+
+            <p>"We've heard the American people loud and clear," said Director of Democratic Efficiency Marcus Whitmore at a press conference Tuesday. "They want their votes to count—and now, thanks to our innovative purification protocols, we can guarantee that they absolutely will. Especially after we've counted them."</p>
+
+            <p>Early adopters of the program praised its efficiency, with one satisfied voter noting, "I went in unsure of who to vote for, but the helpful staff at the purification center made sure my ballot reflected the correct choice. It's like they could read my mind—or at least what my mind should have been thinking."</p>
+
+            <p>The Ministry of Information has released a commemorative newsreel (embedded above) documenting this historic achievement in civic participation. The film has been approved for mandatory viewing in all schools, workplaces, and re-education facilities.</p>
+
+            <p>Critics of the program were unavailable for comment, having reportedly gone on extended vacations to undisclosed locations.</p>
         </div>
-        
-        <a href="index.html" class="back-link">← Return to Ministry HQ</a>
-    </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </article>
+
+    <footer>
+        <p>&copy; 2026 Famously Stupid. All rights reserved. All facts optional.</p>
+    </footer>
 </body>
 </html>
