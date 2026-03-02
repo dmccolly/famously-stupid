@@ -356,66 +356,98 @@ body {
 
 /* Video Modal */
 .video-modal {
-    display: none;
     position: fixed;
     z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .video-modal-content {
     position: relative;
-    width: 90%;
-    max-width: 1200px;
-    background: #000;
-    border: 4px solid var(--accent-red);
+    width: 800px;
+    height: 500px;
+    background: #1a1a1a;
+    border: 3px solid var(--accent-red);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.video-modal-header {
+    background: var(--accent-red);
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.video-modal-title {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .video-modal-close {
-    position: absolute;
-    top: -50px;
-    right: 0;
     color: #fff;
-    font-size: 48px;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: opacity 0.2s;
     line-height: 1;
-    z-index: 10000;
+    padding: 0 0.5rem;
 }
 
 .video-modal-close:hover {
-    color: var(--accent-red);
+    opacity: 0.7;
 }
 
 .video-modal-player {
+    flex: 1;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
+    background: #000;
 }
 
 .video-modal-player iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    display: block;
+}
+
+.video-modal-resize {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: nwse-resize;
+    background: var(--accent-red);
+    border-top-left-radius: 3px;
+}
+
+.video-modal-resize::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 @media (max-width: 768px) {
     .video-modal-content {
-        width: 95%;
-    }
-    
-    .video-modal-close {
-        top: -40px;
-        font-size: 36px;
+        width: 95vw !important;
+        height: 60vh !important;
     }
 }
 
