@@ -173,6 +173,65 @@ body {
     padding: 3rem 2rem;
 }
 
+/* Sponsor Section */
+.sponsor-section {
+    background: var(--accent-red);
+    padding: 2rem;
+    margin: 0 -2rem 3rem -2rem;
+    border-top: 4px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
+}
+
+.sponsor-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sponsor-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.sponsor-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.sponsor-video iframe {
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.sponsor-text {
+    color: white;
+}
+
+.sponsor-text h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.sponsor-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .sponsor-content {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Hero */
 .hero-section {
     margin-bottom: 4rem;
