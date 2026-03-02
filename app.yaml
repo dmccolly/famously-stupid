@@ -1,0 +1,10 @@
+name: famously-stupid
+region: nyc
+static_sites:
+  - name: web
+    github:
+      repo: dmccolly/famously-stupid
+      branch: main
+      deploy_on_push: true
+    routes:
+      - path: /
