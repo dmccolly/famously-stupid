@@ -3,141 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famously Stupid | America's Finest News Source (Basically)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Famously Stupid</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@700&family=Franklin+Gothic+Medium&display=swap');
-        
-        body { font-family: 'Libre Baskerville', serif; background-color: #ffffff; }
-        .headline { font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.1; }
-        .sans { font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; }
-        .newswire-tag { background-color: #008248; color: white; padding: 2px 8px; font-weight: bold; }
-        .border-onion { border-color: #e2e2e2; }
-        .trending-header { background-color: #008248; color: white; padding: 10px; font-family: 'Roboto Condensed', sans-serif; font-weight: bold; }
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff4d4d;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .container {
+            border: 2px solid #ff4d4d;
+            padding: 2rem;
+            box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+        }
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
     </style>
 </head>
-<body class="text-black bg-white">
-
-    <!-- Top Utility Bar -->
-    <div class="border-b border-onion py-1 px-4 flex justify-between items-center text-[11px] font-bold sans tracking-tight text-gray-600">
-        <div class="flex gap-4">
-            <a href="#" class="hover:underline">Become a Member</a>
-            <a href="#" class="hover:underline">Get the Paper</a>
-        </div>
-        <div class="flex gap-4">
-            <a href="#" class="hover:underline">Newsletter</a>
-            <a href="#" class="hover:underline">Shop</a>
-        </div>
+<body>
+    <div class="container">
+        <h1>Famously Stupid</h1>
+        <p>The Ministry of Information is currently curating the truth.</p>
+        <p class="blink">BROADCAST IMMINENT</p>
     </div>
-
-    <!-- Main Header / Logo -->
-    <header class="py-8 px-4 text-center border-b-[4px] border-black">
-        <div class="max-w-6xl mx-auto flex flex-col items-center">
-            <h1 class="text-7xl font-black tracking-tighter mb-1" style="font-family: 'Arial Black', sans-serif;">the FAMOUSLY STUPID</h1>
-            <p class="sans text-xs tracking-[0.2em] font-bold">The World's Most Authoritative Source of Idiocy</p>
-        </div>
-    </header>
-
-    <!-- Sub-Header: Date/Weather/Nav -->
-    <div class="border-b border-black py-2 px-4 bg-white sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center text-[12px] sans font-bold">
-            <div class="flex gap-6 items-center">
-                <span>Monday, March 2, 2026</span>
-                <span>29°F</span>
-            </div>
-            <nav class="flex gap-6 uppercase">
-                <a href="#" class="hover:text-green-700">Latest</a>
-                <a href="#" class="hover:text-green-700">Politics</a>
-                <a href="#" class="hover:text-green-700">Local</a>
-                <a href="#" class="hover:text-green-700">Entertainment</a>
-                <a href="#" class="hover:text-green-700">Video</a>
-            </nav>
-            <div class="w-24 text-right">Search</div>
-        </div>
-    </div>
-
-    <!-- Newswire Ticker -->
-    <div class="border-b border-onion py-1 px-4 bg-white overflow-hidden whitespace-nowrap">
-        <div class="max-w-6xl mx-auto flex items-center gap-4">
-            <span class="newswire-tag sans text-xs">Newswire</span>
-            <div class="text-sm italic font-medium">Breaking: Gary Plevin declares independence from sidewalk... TSA replaces bomb dogs with 'Vibe Checkers'...</div>
-        </div>
-    </div>
-
-    <!-- Main Content Layout -->
-    <main class="max-w-6xl mx-auto p-4 flex flex-col md:flex-row gap-8 mt-4">
-        
-        <!-- Left Column: Main Stories -->
-        <div class="md:w-2/3">
-            
-            <!-- Hero Article: Layout mirroring The Onion -->
-            <article class="flex flex-col md:flex-row gap-6 border-b border-onion pb-8 mb-8">
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl headline mb-4 hover:underline cursor-pointer">Iran: Our 51st State Is Officially Open For Business</h2>
-                    <p class="text-lg leading-relaxed text-gray-800">Establishing a Homeowners Association in a smoking crater isn't just policy—it's a lifestyle choice for the boldest patriots.</p>
-                </div>
-                <div class="md:w-1/2">
-                    <img src="public/images/iran_hero.jpg" class="w-full grayscale border border-gray-200">
-                    <p class="text-[11px] text-gray-500 mt-1 sans italic">Photo: American Progress News</p>
-                </div>
-            </article>
-
-            <!-- Secondary Story -->
-            <article class="flex flex-col md:flex-row gap-6 border-b border-onion pb-8 mb-8">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl headline mb-4 hover:underline cursor-pointer">Congress Discovers Groundbreaking Solution To Shutdown: Not Showing Up</h2>
-                    <p class="text-base leading-relaxed text-gray-800">Legislative productivity reaches all-time high as zero members report for duty. Bipartisan shrug declared a national success.</p>
-                </div>
-                <div class="md:w-1/2">
-                    <img src="public/images/congress_hero.jpg" class="w-full grayscale border border-gray-200">
-                </div>
-            </article>
-
-        </div>
-
-        <!-- Right Column: Sidebar -->
-        <aside class="md:w-1/3">
-            <div class="border border-onion">
-                <div class="trending-header uppercase text-sm tracking-widest">Trending</div>
-                <div class="p-0">
-                    <div class="flex gap-3 p-3 border-b border-onion hover:bg-gray-50 cursor-pointer">
-                        <div class="w-20 h-20 bg-gray-200 flex-shrink-0"><img src="public/images/logo.jpg" class="w-full h-full object-cover grayscale"></div>
-                        <h4 class="text-sm font-bold leading-tight">Report: 98% of Statistics Are Just Shapes Wearing Fancy Hats</h4>
-                    </div>
-                    <div class="flex gap-3 p-3 border-b border-onion hover:bg-gray-50 cursor-pointer">
-                        <div class="w-20 h-20 bg-gray-200 flex-shrink-0"></div>
-                        <h4 class="text-sm font-bold leading-tight">Local Man Annexes Own Driveway, establishes custom toll booth</h4>
-                    </div>
-                    <div class="flex gap-3 p-3 hover:bg-gray-50 cursor-pointer">
-                        <div class="w-20 h-20 bg-gray-200 flex-shrink-0"></div>
-                        <h4 class="text-sm font-black leading-tight">Patriots Celebrate 51st Star with Explosive Property Values</h4>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ad Space -->
-            <div class="mt-8 border border-onion bg-gray-50 p-4 text-center">
-                <p class="sans text-[10px] text-gray-400 mb-2 underline">Advertisement</p>
-                <div class="h-64 bg-gray-200 flex items-center justify-center italic text-gray-500">
-                    Propaganda Reel:<br>Episode 2 Out Now!
-                </div>
-            </div>
-        </aside>
-
-    </main>
-
-    <footer class="bg-white border-t-4 border-black mt-12 py-12 px-4 text-center">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-black mb-8" style="font-family: 'Arial Black', sans-serif;">the FAMOUSLY STUPID</h2>
-            <div class="flex justify-center gap-8 text-xs sans font-bold mb-8">
-                <a href="#">About</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Contact</a>
-            </div>
-            <p class="text-[10px] sans text-gray-500 tracking-widest">© 2026 FAMOUSLY STUPID MEDIA GROUP. TRUTH IS SUBJECTIVE.</p>
-        </div>
-    </footer>
-
 </body>
 </html>
